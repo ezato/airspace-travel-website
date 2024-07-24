@@ -33,7 +33,7 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="#"><img src="./images/logo.png" style="width: 130px;"></a>
+			<a class="navbar-brand" href="#"><img src="./images/logo.png" style="width: 150px;"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
 				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
@@ -52,22 +52,73 @@
 	</nav>
 	<!-- END nav -->
 
-	<div class="hero-wrap js-fullheight" style="background-image: url('images/bg_10.jpg');">
+	<div id="carouselExampleIndicators" class="carousel slide js-fullheight" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active js-fullheight" style="background-image: url('images/bg_5.jpg');">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row no-gutters slider-text js-fullheight align-items-center"
+						data-scrollax-parent="true">
+						<div class="col-md-7 ftco-animate">
+							<h1 class="mb-4">Discover Your Favorite Place with Us</h1>
+							<p class="caps">Travel to the any corner of the world, without going around in circles</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item js-fullheight" style="background-image: url('images/bg_11.jpg');">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row no-gutters slider-text js-fullheight align-items-center"
+						data-scrollax-parent="true">
+						<div class="col-md-7 ftco-animate">
+							<h1 class="mb-4">Explore the Beauty of the World</h1>
+							<p class="caps">Your adventure starts here</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item js-fullheight" style="background-image: url('images/bg_12.jpg');">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row no-gutters slider-text js-fullheight align-items-center"
+						data-scrollax-parent="true">
+						<div class="col-md-7 ftco-animate">
+							<h1 class="mb-4">Make Memories Around the World</h1>
+							<p class="caps">Discover new places with us</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+	<!-- <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_10.jpg');">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
 				<div class="col-md-7 ftco-animate">
-					<!-- <span class="subheading">Welcome to Pacific</span> -->
+					
 					<h1 class="mb-4">Discover Your Favorite Place with Us</h1>
 					<p class="caps">Travel to the any corner of the world, without going around in circles</p>
 				</div>
-				<!-- <a href="https://vimeo.com/45830194"
-					class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
-					<span class="fa fa-play"></span>
-				</a> -->
+				
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- <section class="ftco-section ftco-no-pb ftco-no-pt">
 		<div class="container">
@@ -244,9 +295,68 @@
 			</div>
 	</section> -->
 
-
-
 	<section class="ftco-section services-section" id="about">
+		<div class="container">
+			<div class="row d-flex">
+
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+							<div class="services services-1 color-1 d-block img"
+								style="background-image: url(images/bg_10.jpg);">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="flaticon-map"></span></div>
+								<div class="media-body">
+									<h3 class="heading mb-3">Domestic Tours</h3>
+									<p>Experiencing local cultures, outdoor adventures, and relaxing at scenic spots
+										Experiencing local cultures, outdoor adventures, and relaxing at scenic spots
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+							<div class="services services-1 color-2 d-block img"
+								style="background-image: url(images/services-1.jpg);">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="flaticon-paragliding"></span></div>
+								<div class="media-body">
+									<h3 class="heading mb-3">International Tours</h3>
+									<p>Planning your dream international vacation has never been easier. From booking transportation and accommodations to organizing activities, we've got you covered to ensure an unforgettable experience.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+							<div class="services services-1 color-3 d-block img"
+								style="background-image: url(images/image_1.jpg);">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="flaticon-tour-guide"></span></div>
+								<div class="media-body">
+									<h3 class="heading mb-3">VISA/Ticket Sale </h3>
+									<p>Simplify your travel preparations with our comprehensive VISA and ticket sale services. We handle everything from securing your travel documents to booking your flights, ensuring a hassle-free journey.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+							<div class="services services-1 color-4 d-block img"
+								style="background-image: url(images/hotel.jpg);">
+								<div class="icon d-flex align-items-center justify-content-center"><span
+										class="flaticon-tour-guide"></span></div>
+								<div class="media-body">
+									<h3 class="heading mb-3">Hotel Booking</h3>
+									<p>Booking transportation, accommodation, and activities to ensure an enjoyable trip. Our hotel booking services guarantee a comfortable and convenient stay, tailored to meet your preferences and needs.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <section class="ftco-section services-section" id="about">
 		<div class="container">
 			<div class="row d-flex">
 				<div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
@@ -317,7 +427,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<section class="ftco-section ftco-about img" style="background-image: url(images/bg_4.jpg);">
 		<div class="overlay"></div>
