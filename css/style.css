@@ -14523,3 +14523,27 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px; /* Adjust the position from the bottom */
+  right: 20px;  /* Adjust the position from the right */
+  background-color: #25D366;
+  color: white;
+  width: 60px;   /* Set equal width */
+  height: 60px;  /* Set equal height */
+  display: flex; /* Use flexbox to center the icon */
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* This makes the element round */
+  font-size: 28px;    /* Adjust the font size */
+  z-index: 1000; /* Ensure it appears above other elements */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-icon:hover {
+  background-color: #128C7E;
+  text-decoration: none;
+}
+
