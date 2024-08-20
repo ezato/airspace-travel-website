@@ -14589,7 +14589,7 @@ textarea.form-control {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .carousel {
-        height: auto; /* Adjust height based on content for mobile screens */
+        height: 100%; /* Adjust height based on content for mobile screens */
     }
     .carousel-item {
         background-size: contain; /* Ensure image fits within the container */
