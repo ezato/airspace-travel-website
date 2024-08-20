@@ -14547,3 +14547,13 @@ textarea.form-control {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+    #carouselExampleIndicators {
+        height: 100%; /* Full viewport height on mobile */
+    }
+    .carousel-item {
+        height: 100%; /* Full viewport height for carousel items */
+    }
+}
+
+
