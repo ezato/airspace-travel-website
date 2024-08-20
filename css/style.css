@@ -14527,18 +14527,26 @@ textarea.form-control {
 
 .whatsapp-icon {
   position: fixed;
-  bottom: 20px; /* Adjust the position from the bottom */
-  right: 20px;  /* Adjust the position from the right */
+  bottom: 20px;
+  /* Adjust the position from the bottom */
+  right: 20px;
+  /* Adjust the position from the right */
   background-color: #25D366;
   color: white;
-  width: 60px;   /* Set equal width */
-  height: 60px;  /* Set equal height */
-  display: flex; /* Use flexbox to center the icon */
+  width: 60px;
+  /* Set equal width */
+  height: 60px;
+  /* Set equal height */
+  display: flex;
+  /* Use flexbox to center the icon */
   align-items: center;
   justify-content: center;
-  border-radius: 50%; /* This makes the element round */
-  font-size: 28px;    /* Adjust the font size */
-  z-index: 1000; /* Ensure it appears above other elements */
+  border-radius: 50%;
+  /* This makes the element round */
+  font-size: 28px;
+  /* Adjust the font size */
+  z-index: 1000;
+  /* Ensure it appears above other elements */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -14547,59 +14555,127 @@ textarea.form-control {
   text-decoration: none;
 }
 
-/* @media (max-width: 768px) {
-    #carouselExampleIndicators {
-        height: 100%; 
-    }
-    .carousel-item {
-        height: 100%; 
-    }
-} */
 
 /* General Styles */
 .carousel {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Default to 100vh for desktop */
-    overflow: hidden; /* Hide overflow to prevent scrollbars */
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* Default to 100vh for desktop */
+  overflow: hidden;
+  /* Hide overflow to prevent scrollbars */
 }
 
 .carousel-inner {
-    height: 100%; /* Ensures inner content follows the height of the carousel */
+  height: 100%;
+  /* Ensures inner content follows the height of the carousel */
 }
 
 .carousel-item {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 100%; /* Default to 100% of the parent container */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100%;
+  /* Default to 100% of the parent container */
 }
 
-/* Overlay Style */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1; /* Ensure overlay is below text */
+  display: none;
 }
+
+.carousel-content {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 0; /* Align left */
+  transform: translateY(-50%); /* Center vertically */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px; /* Add padding to prevent text from touching edges */
+  z-index: 2; /* Ensure content is above the overlay */
+}
+
+.slider-text {
+  padding-top: 30%;
+  color: #fff;
+  text-align: left; /* Align text to the left */
+  max-width: 100%; /* Optional: Control the width of text area */
+  /* position: relative; */
+}
+
+
+.slider-text h1{
+  font-size: 3rem;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.slider-text p.caps{
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .carousel {
-        height: 100%; /* Adjust height based on content for mobile screens */
-    }
-    .carousel-item {
-        background-size: contain; /* Ensure image fits within the container */
-        background-position: center center; /* Center image */
-        background-repeat: no-repeat; /* Avoid repeating image */
-        height: auto; /* Adjust height based on image size */
-        min-height: 100%; /* Ensure it takes at least the full viewport height */
-    }
+  .carousel {
+    height: 30vh;
+    /* Adjust height for mobile screens */
+  }
+
+  .carousel-item {
+    background-size: cover;
+    background-position: center center; /* Center image */
+    background-repeat: no-repeat; /* Avoid repeating image */
+    height: 100%; /* Adjust height based on image size */
+    min-height: 30vh;
+  }
+
+  .carousel-content {
+    height: auto; /* Adjust height based on content */
+    padding: 0 10px; /* Adjust padding for smaller screens */
+    text-align: left; /* Ensure text is left-aligned on mobile screens */
+    top: 50%; /* Center vertically within the carousel */
+    transform: translateY(-50%); /* Center vertically */
+  }
+
+  .slider-text {
+    max-width: 100%; /* Ensure text area uses full width on mobile */
+  }
+
+  .carousel-title {
+    font-size: 1.5rem;
+  }
+
+  .carousel-description {
+    font-size: 1rem;
+  }
+  .slider-text h1{
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.0;
+    font-weight: 600;
+  }
+  .slider-text p.caps{
+    font-weight: 400;
+    font-size: 9px;
+  }
+  .slider-text {
+    padding-top:15%;
+    color: #fff;
+    text-align: left; /* Align text to the left */
+    max-width: 70%; /* Optional: Control the width of text area */
+    /* position: relative; */
+  }
+  .carousel-indicators{
+    display: none;
+  }
 }
-
-
-
-
