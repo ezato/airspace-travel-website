@@ -14547,14 +14547,14 @@ textarea.form-control {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #carouselExampleIndicators {
-        height: 100%; /* Full viewport height on mobile */
+        height: 100%; 
     }
     .carousel-item {
-        height: 100%; /* Full viewport height for carousel items */
+        height: 100%; 
     }
-}
+} */
 
 /* General Styles */
 .carousel {
