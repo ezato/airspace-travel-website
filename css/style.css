@@ -14564,12 +14564,16 @@ textarea.form-control {
     overflow: hidden; /* Hide overflow to prevent scrollbars */
 }
 
+.carousel-inner {
+    height: 100%; /* Ensures inner content follows the height of the carousel */
+}
+
 .carousel-item {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
-    height: 100vh; /* Default to 100vh for desktop */
+    height: 100%; /* Default to 100% of the parent container */
 }
 
 /* Overlay Style */
@@ -14585,15 +14589,17 @@ textarea.form-control {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .carousel {
-        height: 100%; /* Adjust height for mobile screens */
+        height: auto; /* Adjust height based on content for mobile screens */
     }
     .carousel-item {
         background-size: contain; /* Ensure image fits within the container */
         background-position: center center; /* Center image */
         background-repeat: no-repeat; /* Avoid repeating image */
-        height: 100%; /* Adjust height for mobile screens */
+        height: auto; /* Adjust height based on image size */
+        min-height: 100%; /* Ensure it takes at least the full viewport height */
     }
 }
+
 
 
 
