@@ -14587,38 +14587,47 @@ textarea.form-control {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1; /* Ensure overlay is below text */
+  z-index: 1;
+  /* Ensure overlay is below text */
   display: none;
 }
 
 .carousel-content {
   position: absolute;
-  top: 50%; /* Center vertically */
-  left: 0; /* Align left */
-  transform: translateY(-50%); /* Center vertically */
+  top: 50%;
+  /* Center vertically */
+  left: 0;
+  /* Align left */
+  transform: translateY(-50%);
+  /* Center vertically */
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 15px; /* Add padding to prevent text from touching edges */
-  z-index: 2; /* Ensure content is above the overlay */
+  padding: 0 15px;
+  /* Add padding to prevent text from touching edges */
+  z-index: 2;
+  /* Ensure content is above the overlay */
 }
 
 .slider-text {
   padding-top: 30%;
   color: #fff;
-  text-align: left; /* Align text to the left */
-  max-width: 100%; /* Optional: Control the width of text area */
+  text-align: left;
+  /* Align text to the left */
+  max-width: 100%;
+  /* Optional: Control the width of text area */
   /* position: relative; */
 }
 
 
-.slider-text h1{
+.slider-text h1 {
   font-size: 3rem;
   color: #fff;
   line-height: 1.2;
   font-weight: 700;
 }
-.slider-text p.caps{
+
+.slider-text p.caps {
   font-weight: 400;
   font-size: 1.25rem;
 }
@@ -14633,22 +14642,31 @@ textarea.form-control {
 
   .carousel-item {
     background-size: cover;
-    background-position: center center; /* Center image */
-    background-repeat: no-repeat; /* Avoid repeating image */
-    height: 100%; /* Adjust height based on image size */
+    background-position: center center;
+    /* Center image */
+    background-repeat: no-repeat;
+    /* Avoid repeating image */
+    height: 100%;
+    /* Adjust height based on image size */
     min-height: 30vh;
   }
 
   .carousel-content {
-    height: auto; /* Adjust height based on content */
-    padding: 0 10px; /* Adjust padding for smaller screens */
-    text-align: left; /* Ensure text is left-aligned on mobile screens */
-    top: 50%; /* Center vertically within the carousel */
-    transform: translateY(-50%); /* Center vertically */
+    height: auto;
+    /* Adjust height based on content */
+    padding: 0 10px;
+    /* Adjust padding for smaller screens */
+    text-align: left;
+    /* Ensure text is left-aligned on mobile screens */
+    top: 50%;
+    /* Center vertically within the carousel */
+    transform: translateY(-50%);
+    /* Center vertically */
   }
 
   .slider-text {
-    max-width: 100%; /* Ensure text area uses full width on mobile */
+    max-width: 100%;
+    /* Ensure text area uses full width on mobile */
   }
 
   .carousel-title {
@@ -14658,24 +14676,30 @@ textarea.form-control {
   .carousel-description {
     font-size: 1rem;
   }
-  .slider-text h1{
+
+  .slider-text h1 {
     font-size: 18px;
     color: #fff;
     line-height: 1.0;
     font-weight: 600;
   }
-  .slider-text p.caps{
+
+  .slider-text p.caps {
     font-weight: 400;
-    font-size: 9px;
+    font-size: 10px;
   }
+
   .slider-text {
-    padding-top:15%;
+    padding-top: 15%;
     color: #fff;
-    text-align: left; /* Align text to the left */
-    max-width: 70%; /* Optional: Control the width of text area */
+    text-align: left;
+    /* Align text to the left */
+    max-width: 70%;
+    /* Optional: Control the width of text area */
     /* position: relative; */
   }
-  .carousel-indicators{
+
+  .carousel-indicators {
     display: none;
   }
 }
