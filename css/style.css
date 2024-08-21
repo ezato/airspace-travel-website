@@ -14588,7 +14588,6 @@ textarea.form-control {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
-  /* Ensure overlay is below text */
   display: none;
 }
 
