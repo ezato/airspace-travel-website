@@ -14640,14 +14640,21 @@ textarea.form-control {
     /* Adjust height for mobile screens */
   }
 
-  .carousel-item {
+/*   .carousel-item {
     background-size: cover;
     background-position: center center;
-    /* Center image */
     background-repeat: no-repeat;
-    /* Avoid repeating image */
     height: 100%;
-    /* Adjust height based on image size */
+    min-height: 30vh;
+  } */
+
+  .carousel-item {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), transparent);
+    background-size: cover; /* Cover the entire element */
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%; /* Ensure it takes full height of the carousel container */
+    position: relative;
     min-height: 30vh;
   }
 
